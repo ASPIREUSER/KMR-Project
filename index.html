@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMR Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen active" id="start-screen">
+            <h1>Masa Kuiz!</h1>
+            <p>Uji pengetahuan anda tentang obesiti dan gaya hidup sihat melalui kuiz interaktif ini!</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <div class="screen" id="quiz-screen">
+            <div class="quiz-header">
+                <h2 id="question-text">Soalan goes here</h2>
+                <div class="quiz-info">
+                    <p>Soalan <span id="current-question">1</span> daripada <span id="total-questions">5</span></p>
+
+                    <p>Skor: <span id="score">0</span></p>
+                </div>
+            </div>
+
+            <div id="answers-container" class="answers-container">
+                <!-- Answer buttons will be inserted here from our js code -->
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h1>Keputusan Kuiz!</h1>
+            <div class="result-info">
+                <p>Kamu mendapat <span id="final-score">0</span> daripada <span id="max-score">100</span></p>
+
+                <div id="result-message">Syabas Teruskan!</div>
+            </div>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
